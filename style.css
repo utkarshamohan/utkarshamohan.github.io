@@ -1,7 +1,60 @@
-body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; background: #f4f4f4; }
-header { background: #333; color: #fff; padding: 10px 20px; }
-header h1 { margin: 0; }
-nav a { color: #fff; margin-right: 15px; text-decoration: none; }
-main { background: #fff; padding: 20px; margin-top: 20px; }
-footer { margin-top: 20px; background: #333; color: #fff; padding: 10px 20px; }
-iframe { border: none; }
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color: #f9f9f9;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #20232a;
+  color: white;
+  padding: 20px;
+  height: 100vh;
+  position: fixed;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+}
+
+.sidebar .nav-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 220px;
+  top: 0;
+  background-color: #333;
+  min-width: 200px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.content {
+  margin-left: 260px;
+  padding: 40px;
+  max-width: 800px;
+}
